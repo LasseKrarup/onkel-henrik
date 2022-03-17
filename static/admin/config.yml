@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+
+local_backend: true
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - label: "Index page"
+        name: "index"
+        file: "src/markdown/index.md"
+        # using a per collection media_folder and public_folder is 
+        # necessary for NetlifyCMS to place media relative the the 
+        # main file of the collection. Otherwise the images won't get
+        # loaded to GraphQL and we can't use <GatsbyImage>
+        media_folder: ""
+        public_folder: ""
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: slug, default: /, widget: hidden, required: true }
+          - name: image1
+            label: Image
+            widget: object
+            fields:
+            - { name: image, label: Image file, widget: image }
+            - { name: alt, label: Alt text, widget: string, hint: A text for individuals with reduced visibility or people using screen readers }
+          - { name: body, label: Body, widget: markdown }
+          - { name: templateKey, default: index-template, required: true, widget: hidden }
+  - name: subpages
+    label: Subpage
+    folder: src/markdown/subpages
+    # using a specific path implies the same media_folder relative to
+    # the folder. This is also required for the correct placement of assets
+    # so the images will be loaded to GraphQL
+    path: "{{slug}}/index"
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - name: image1
+        label: Image
+        widget: object
+        fields:
+        - { name: image, label: Image file, widget: image }
+        - { name: alt, label: Alt text, widget: string, hint: A text for individuals with reduced visibility or people using screen readers }
+      - { name: templateKey, default: subpage-template, widget: hidden }
+      - { name: body, label: Body, widget: markdown }
