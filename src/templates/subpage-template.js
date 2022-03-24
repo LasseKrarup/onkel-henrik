@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 // eslint-disable-next-line
-export const ProductPageTemplate = ({
+export const SubpageTemplate = ({
   title,
   image,
   html
@@ -13,7 +14,7 @@ export const ProductPageTemplate = ({
 
   return (
     <div>
-        <h1>{title}</h1>
+        <h1 className="text-2xl font-light tracking-widest">{title}</h1>
         
         <PreviewCompatibleImage imageInfo={image} />
 
@@ -22,17 +23,19 @@ export const ProductPageTemplate = ({
   );
 };
 
-ProductPageTemplate.propTypes = {
+SubpageTemplate.propTypes = {
   title: PropTypes.string,
   
 };
 
-const ProductPage = ({ data }) => {
+const Subpage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  const { siteMetadata } = data.site;
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <Seo title={frontmatter.title} siteMetadata={siteMetadata}></Seo>
+      <SubpageTemplate
         title={frontmatter.title}
         image={frontmatter.image1}
         html={data.markdownRemark.html}
@@ -41,7 +44,7 @@ const ProductPage = ({ data }) => {
   );
 };
 
-ProductPage.propTypes = {
+Subpage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -50,10 +53,10 @@ ProductPage.propTypes = {
   }),
 };
 
-export default ProductPage;
+export default Subpage;
 
-export const productPageQuery = graphql`
-  query ProductPage($slug : String!) {
+export const SubpageQuery = graphql`
+  query Subpage($slug : String!) {
     markdownRemark(fields: {slug: { eq: $slug }}) {
       frontmatter {
         title
@@ -67,6 +70,14 @@ export const productPageQuery = graphql`
         }
       }
       html
+    }
+
+    site{
+      siteMetadata{
+        author
+        title
+        description
+      }
     }
   }
 `;

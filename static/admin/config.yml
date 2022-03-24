@@ -30,21 +30,42 @@ collections:
             - { name: alt, label: Alt text, widget: string, hint: A text for individuals with reduced visibility or people using screen readers }
           - { name: body, label: Body, widget: markdown }
           - { name: templateKey, default: index-template, required: true, widget: hidden }
+      - label: "Subpages Page"
+        name: "subpages"
+        file: "src/markdown/subpages.md"
+        media_folder: ""
+        public_folder: ""
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: slug, default: /subpages/, widget: hidden, required: true }
+          - name: image1
+            label: Image
+            widget: object
+            fields:
+            - { name: image, label: Image file, widget: image }
+            - { name: alt, label: Alt text, widget: string, hint: A text for individuals with reduced visibility or people using screen readers }
+          - { name: body, label: Body, widget: markdown }
+          - { name: templateKey, default: index-template, required: true, widget: hidden }
   - name: subpages
-    label: Subpage
-    folder: src/markdown/subpages
+    label: Subpages
+    folder: src/markdown/subpages/
     # using a specific path implies the same media_folder relative to
     # the folder. This is also required for the correct placement of assets
     # so the images will be loaded to GraphQL
     path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     fields:
-      - { name: title, label: Title, widget: string }
+      - { name: title, label: Title, widget: string, default: Title goes here }
       - name: image1
         label: Image
         widget: object
+        # Make sure to use defaults for every field! 
+        # Otherwise NetlifyCMS preview crashes when creating new entries
+        # This includes images
         fields:
-        - { name: image, label: Image file, widget: image }
-        - { name: alt, label: Alt text, widget: string, hint: A text for individuals with reduced visibility or people using screen readers }
+        - { name: image, label: Image file, widget: image, default: /assets/gatsby-astronaut.png }
+        - { name: alt, label: Alt text, widget: string, hint: A text for individuals with reduced visibility or people using screen readers, default: Image alternative text }
       - { name: templateKey, default: subpage-template, widget: hidden }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: markdown, default: Main text goes here }

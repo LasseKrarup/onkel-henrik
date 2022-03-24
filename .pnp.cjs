@@ -85,6 +85,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"],\
             ["url", "npm:0.11.0"],\
             ["util", "npm:0.12.4"],\
+            ["uuid", "npm:8.3.2"],\
             ["vm-browserify", "npm:1.1.2"],\
             ["webpack", "virtual:826f3f719ff6f133a4fa6ff3abb53524f1354e4e26ca30b756e63c533cc8e475ef40bbc77cbf0990cdaac82c073f0e283e62c29af5c550344edfc44d7e181534#npm:5.70.0"]\
           ],\
@@ -20731,6 +20732,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"],\
             ["url", "npm:0.11.0"],\
             ["util", "npm:0.12.4"],\
+            ["uuid", "npm:8.3.2"],\
             ["vm-browserify", "npm:1.1.2"],\
             ["webpack", "virtual:826f3f719ff6f133a4fa6ff3abb53524f1354e4e26ca30b756e63c533cc8e475ef40bbc77cbf0990cdaac82c073f0e283e62c29af5c550344edfc44d7e181534#npm:5.70.0"]\
           ],\

@@ -29,7 +29,25 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `blurred`,
+          quality: 85,
+          // default TailwindCSS breakpoints
+          breakpoints: [640, 768, 1024, 1280, 1536],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,

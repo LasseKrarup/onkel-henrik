@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Seo from "../components/Seo";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -15,11 +15,21 @@ export const IndexPageTemplate = ({
 
   return (
     <>
-      <Seo title={title}></Seo>
-      <h1>{title}</h1>
+      <h1 
+        className="
+          text-4xl
+          tracking-wider
+          font-light
+          mb-4
+        "
+      >{title}</h1>
+
       <PreviewCompatibleImage imageInfo={image} />
 
-      <div dangerouslySetInnerHTML={{__html: html}}></div>
+      <div 
+        className="py-8"
+        dangerouslySetInnerHTML={{__html: html}}
+      ></div>
     </>
   );
 };
@@ -31,9 +41,11 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  const { siteMetadata } = data.site;
 
   return (
     <Layout>
+      <Seo title={frontmatter.title} siteMetadata={siteMetadata}></Seo>
       <IndexPageTemplate
         title={frontmatter.title}
         image={frontmatter.image1}
@@ -55,14 +67,14 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query IndexTemplateQuery {
-    markdownRemark(fields: {slug: {eq: "/"}}) {
+  query IndexTemplateQuery($slug : String!) {
+    markdownRemark(fields: {slug: {eq: $slug}}) {
       frontmatter {
         title
         image1 {
           image {
             childImageSharp {
-              gatsbyImageData(width: 600)
+              gatsbyImageData(width: 450)
             }
           }
           alt
@@ -70,5 +82,14 @@ export const pageQuery = graphql`
       }
       html
     }
+
+    site {
+      siteMetadata {
+        author
+        description
+        title
+      }
+    }
+    
   }
 `;

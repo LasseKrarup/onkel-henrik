@@ -14915,6 +14915,7 @@ __metadata:
     typescript: ^4.6.2
     url: ^0.11.0
     util: ^0.12.4
+    uuid: ^8.3.2
     vm-browserify: ^1.1.2
     webpack: ^5.70.0
   languageName: unknown
