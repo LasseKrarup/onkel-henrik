@@ -1,5 +1,6 @@
 ---
-title: Title from NetlifyCMS
+title: Onkel Henrik
+subtitle: Musikundervisning i børnehøjde
 slug: /
 image1: 
     image: LK-logo.png

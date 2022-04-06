@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+html {
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+
+.section, .hero {
+    scroll-snap-align: center;
+}
+
+footer {
+    scroll-snap-align: end;
+}
+
+.section {
+    @apply min-h-screen flex items-center;
+}
+
+.title, .subtitle, .amatic {
+    font-family: "Amatic SC", Sans serif
+}
+
+.bg-main {
+    background-color: #BFECFF;
+}

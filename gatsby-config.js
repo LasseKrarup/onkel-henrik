@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby NetlifyCMS Tailwind Starter`,
-    description: `Get started quickly - and for free - with this easy to use Gatsby Starter that comes with NetlifyCMS and Tailwind. Use Yarn Berry (2.0) or later for Plug 'n Play.`,
+    title: `Onkel Henrik`,
+    description: `Undervisning for børn med Onkel Henrik - børnemusik i øjenhøjde`,
     author: `LasseKrarup`,
     siteUrl: `https://www.lassekrarup.com/`,
   },

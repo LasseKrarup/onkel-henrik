@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 const Footer = ({children}) => {
   return (
-    <footer className="mt-8 w-full pt-8 pb-4 bg-black text-white">
-      <div className='mx-auto max-w-4xl px-4'>
+    <footer className="w-full pt-48 pb-16 bg-main text-gray-500">
+      <div className='container has-text-centered'>
         { children }
       </div>
     </footer>

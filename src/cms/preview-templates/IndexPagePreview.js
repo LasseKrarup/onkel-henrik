@@ -26,6 +26,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
       // hence the object being passed to the image prop of IndexPageTemplate
         image={{image: getAsset(image).toString(), alt: data.image1.alt}}
         title={data.title}
+        subtitle={data.subtitle}
         html={micromark(data.body)}
       />
     )
