@@ -85,7 +85,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
 
-        <div className="section">
+        <div className="section bg-green-200">
           <div className="container">
             <div className="columns is-vcentered">
               <Parallax speed={-10} className="column flex justify-end pr-8">
@@ -138,7 +138,7 @@ export const IndexPageTemplate = ({
           </div>  
         </div>
 
-        <div className="section">
+        <div className="section bg-orange-100">
           <div className="container">
             <div className="columns is-vcentered">
               <Parallax speed={20} className="column">
