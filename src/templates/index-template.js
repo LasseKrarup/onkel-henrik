@@ -60,16 +60,15 @@ export const IndexPageTemplate = ({
         <div className="section bg-orange-100">
           <div className="container">
             <Parallax speed={5}>
-              <h2 className="title text-6xl pl-64 pb-8">Hej Lærer</h2>
+              <h2 className="title text-6xl pl-64 pb-8">Hej</h2>
             </Parallax>
             <Parallax speed={-2}>
-              <h3 className="subtitle text-4xl pl-32 pb-8">Velkommen til Onkel Henrik i Ekkodalen</h3>
+              <h3 className="subtitle text-4xl pl-32 pb-8">- og velkommen til Onkel Henrik i Ekkodalen</h3>
             </Parallax>
           
             <Parallax speed={10} className="content">
-              <p>Her ligger et undervisningsforløb, der ca. passer med en lektion. I kan følge det slavisk, eller vælge at gentage en aktivitet, hvis der er spændende muligheder at undersøge. </p>
-              <p>Måske er der nogen der vil trampe, klappe, synge, danse, dramatisere - så brug muligheden for det. Så Kan I tage fat i de andre øvelser en anden dag.</p>
-              <p>På samme måde kan I vælge at skrive nye vers og benytte “Singback”-versionen, hvor jeg holder min mund :)</p>
+              Her er en lektion med fokus på imitation. I kan følge den slavisk eller plukke ud og gentage aktiviteter. Måske er der nogen der vil trampe, klappe, synge, danse, dramatisere - så brug muligheden for det. Så kan I tage fat i de andre øvelser en anden dag.
+              På samme måde kan I benytte “sing back”-versionen, synge selv - og måske finde på nye vers i en anden time. 
             </Parallax>
           </div>
         </div>
@@ -77,7 +76,7 @@ export const IndexPageTemplate = ({
         <div className="section bg-green-200">
           <div className="container has-text-centered flex flex-col items-center">
             <Parallax translateY={[-100,50]}>
-              <h2 className="title text-6xl">Timen begynder...</h2>
+              <h2 className="title text-6xl">Så starter vi...</h2>
             </Parallax>
               <Parallax translateY={[-50,50]}>
                 <h3 className="subtitle text-4xl">"Det' Musik"</h3>
@@ -87,7 +86,8 @@ export const IndexPageTemplate = ({
         </div>
 
         <div className="section bg-green-200">
-          <div className="container">
+          <div className="container flex flex-col items-center">
+            <h2 className="title text-6xl">Ekkodansen</h2>
             <div className="columns is-vcentered">
               <Parallax speed={-10} className="column flex justify-end pr-8">
                 <img src="http://dummyimage.com/840x600" width="840" alt="placeholder" />
@@ -95,7 +95,7 @@ export const IndexPageTemplate = ({
               <Parallax speed={20} className="column">
                 <div className="notification is-info text-xl">
                   <p>
-                    Så skal I <strong>danse</strong>, sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det også rigtig godt at danse den i en rundkreds, mens man danser rundt i cirkelen - indtil man skal i gang med imitationen.
+                  Så skal vi <strong>danse</strong>, sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det rigtig godt at danse den i en rundkreds indtil man skal klappe, og vender ind mod hinanden. 
                   </p>
                 </div>
               </Parallax>
@@ -122,7 +122,7 @@ export const IndexPageTemplate = ({
               <Parallax speed={20} className="column">
                 <h2 className="title text-6xl">Så skal vi igang med at lave ekko!</h2>
                   <p className="content text-xl">
-                    I skal lige vide at jeg bruger et lille signal, så vi husker at vi skal starte forfra med at synge og bevæge os - det lyder sådan her:
+                  I skal lige vide at jeg bruger et lille signal, når vi skal starter på næste vers - det lyder sådan her: 
                   </p>
               </Parallax>
               <Parallax speed={-10} className="column is-8 flex justify-end pr-8">
@@ -163,7 +163,7 @@ export const IndexPageTemplate = ({
               </p>
               <div className="flex justify-center">
                 <audio className="mr-4" src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
-                <button className="button is-primary ml-4">Hent teksten her</button>
+                <a className="button is-primary ml-4" href="/assets/Ekkosangen.pdf" target="_blank" rel="noreferrer">Hent teksten her</a>
               </div>
             </Parallax>
 
@@ -181,7 +181,7 @@ export const IndexPageTemplate = ({
                   </p>
 
                   <div className="mt-8">
-                    <strong>Mine figurer</strong>
+                    <strong>Jeres klap</strong>
                     <audio src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
                   </div>
                   <div className="mt-8">
@@ -197,9 +197,28 @@ export const IndexPageTemplate = ({
           </div>
         </div>
 
+        <div className="section bg-main">
+          <div className="container flex flex-col items-center">
+            <h2 className="title text-6xl">Ro på</h2>
+            <div className="columns is-vcentered">
+              <Parallax speed={-10} className="column flex justify-start pr-8">
+                <img src={OnkelHenrikZzz} alt="Onkel Henrik" className="pointer-events-none" />
+              </Parallax>
+              <Parallax speed={20} className="column">
+                <div className="notification is-info text-xl flex flex-col items-center">
+                  <p>
+                  Nu skal I lægge jer på ryggen eller sætte jer ned, så I er afslappede. I skal bare lukke øjnene, tage en pause og lytte.
+                  </p>
+                    <audio className="mt-8" src="/assets/ro-paa.wav" controls />
+                </div>
+              </Parallax>
+            </div>
+          </div>
+        </div>
 
         <div className="section bg-green-200">
-          <div className="container">
+          <div className="container flex flex-col items-center">
+            <h2 className="title text-6xl">Spejldans</h2>
             <div className="columns is-vcentered">
               <Parallax speed={-10} className="column flex justify-end pr-8">
                 <video src="/assets/Spejldans.mp4" controls width="840" alt="placeholder" />
@@ -235,24 +254,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
-        
-        <div className="section bg-main">
-          <div className="container">
-            <div className="columns is-vcentered">
-              <Parallax speed={-10} className="column flex justify-start pr-8">
-                <img src={OnkelHenrikZzz} alt="Onkel Henrik" className="pointer-events-none" />
-              </Parallax>
-              <Parallax speed={20} className="column">
-                <div className="notification is-info text-xl flex flex-col items-center">
-                  <p>
-                  Nu skal I lægge jer på ryggen eller sætte jer ned, så I er afslappede. I skal bare lukke øjnene, tage en pause og lytte.
-                  </p>
-                    <audio className="mt-8" src="/assets/ro-paa.wav" controls />
-                </div>
-              </Parallax>
-            </div>
-          </div>
-        </div>
+
 
         <div className="section bg-main">
           <div className="container has-text-centered">
