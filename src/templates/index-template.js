@@ -10,6 +10,7 @@ import Seo from "../components/Seo";
 import { FiChevronDown } from "react-icons/fi"
 import OnkelHenrik from "../images/onkel-henrik-optimized.svg"
 import OnkelHenrikEyes from "../images/onkel-henrik-eyes-optimized.svg"
+import OnkelHenrikZzz from "../images/onkel-henrik-zzz.svg"
 
 
 // eslint-disable-next-line
@@ -76,10 +77,10 @@ export const IndexPageTemplate = ({
         <div className="section bg-green-200">
           <div className="container has-text-centered flex flex-col items-center">
             <Parallax translateY={[-100,50]}>
-              <h2 className="title text-6xl">Det' Musik</h2>
+              <h2 className="title text-6xl">Timen begynder...</h2>
             </Parallax>
               <Parallax translateY={[-50,50]}>
-                <h3 className="subtitle text-4xl">Følg med i videoen</h3>
+                <h3 className="subtitle text-4xl">"Det' Musik"</h3>
               </Parallax>
             <Parallax speed={10}><img src="http://dummyimage.com/840x600" width="840" alt="placeholder" /></Parallax>
           </div>
@@ -89,36 +90,17 @@ export const IndexPageTemplate = ({
           <div className="container">
             <div className="columns is-vcentered">
               <Parallax speed={-10} className="column flex justify-end pr-8">
-                <img src={OnkelHenrik} alt="Onkel Henrik" className="pointer-events-none" />
+                <img src="http://dummyimage.com/840x600" width="840" alt="placeholder" />
               </Parallax>
               <Parallax speed={20} className="column">
                 <div className="notification is-info text-xl">
                   <p>
-                    Så skal I <strong>danse</strong>, sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det også rigtig godt at danse den i en rundkreds, mens man danser rundt i cirkelen - indtil man skal i gang med imitationen
+                    Så skal I <strong>danse</strong>, sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det også rigtig godt at danse den i en rundkreds, mens man danser rundt i cirkelen - indtil man skal i gang med imitationen.
                   </p>
+                  <p className="pt-8">Vi tager den lige en gang til!</p>
                 </div>
               </Parallax>
             </div>
-          </div>
-        </div>
-
-        <div className="section bg-main">
-          <div className="container has-text-centered">
-            <Parallax translateX={["50px", "-50px"]}>
-              <h2 className="title text-6xl">Velkommen</h2>
-            </Parallax>
-            <Parallax translateX={["-50px","50px"]}>
-              <h3 className="subtitle text-4xl">Jeg glæder mig til at have musik med jer</h3>
-            </Parallax>
-            <Parallax translateX={["100px","-100px"]} className="content text-xl">
-              <p>
-                - og forhåbentlig har vi det også sjovt samtidig
-              </p>
-              <p>
-                Det vil være intro før Ekko-dansen
-              </p>
-            </Parallax>
-
           </div>
         </div>
 
@@ -126,9 +108,9 @@ export const IndexPageTemplate = ({
           <div className="container has-text-centered">
             <div className="columns is-vcentered">
               <Parallax speed={20} className="column">
-                <h2 className="title text-6xl">Ekko-sang</h2>
+                <h2 className="title text-6xl">Så skal vi igang med at lave ekko!</h2>
                   <p className="content text-xl">
-                    I skal lige vide at jeg bruger et lille signal, så vi husker at vi skal starte forfra med at synge og bevæge os - det lyder sådan her - jeg viser det på videoen.
+                    I skal lige vide at jeg bruger et lille signal, så vi husker at vi skal starte forfra med at synge og bevæge os - det lyder sådan her:
                   </p>
               </Parallax>
               <Parallax speed={-10} className="column is-8 flex justify-end pr-8">
@@ -139,16 +121,50 @@ export const IndexPageTemplate = ({
         </div>
 
         <div className="section bg-orange-100">
+          <div className="container has-text-centered">
+            <div className="is-vcentered">
+              <Parallax speed={10}>
+                <h2 className="title text-6xl">Ekko-sangen</h2>
+              </Parallax>
+              <Parallax speed={-10} className="flex justify-center">
+                <img src="https://www.dummyimage.com/840x600/" alt="Onkel Henrik" className="pointer-events-none" />
+              </Parallax>
+            </div>
+          </div>  
+        </div>
+
+        <div className="section bg-main">
+          <div className="container has-text-centered">
+            <Parallax translateX={["50px", "-50px"]}>
+              <h2 className="title text-6xl">Nu skal I klappe for...</h2>
+            </Parallax>
+            <Parallax translateX={["-50px","50px"]}>
+              <h3 className="subtitle text-4xl">så I skal vælge 4 der klapper for.</h3>
+            </Parallax>
+            <Parallax translateX={["200px","-200px"]} className="content text-xl flex flex-col items-center justify-center">
+              <p className="max-w-md pt-8">
+                Man må gerne genbruge mine figurer, men lige så gerne finde på sine egne - og det vil være godt hvis man klapper en rytme man kan huske - for man skal gøre det 2 gange :) 
+              </p>
+              <p className="max-w-md pt-8">
+                Hvis I hellere vil trampe, hoppe, synge, gå som en julemand eller lyde som en heks, så brug min sing-back version og hent teksten
+              </p>
+              <div className="flex justify-center">
+                <audio className="mr-4" src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+                <button className="button is-primary ml-4">Hent teksten her</button>
+              </div>
+            </Parallax>
+
+          </div>
+        </div>
+
+
+        <div className="section bg-main">
           <div className="container">
             <div className="columns is-vcentered">
               <Parallax speed={20} className="column">
                 <div className="notification is-info text-xl">
                   <p>
-                    Nu skal I til at <strong>klappe</strong>, så du som lærer skal være med til at vælge 4 elever, der klapper for.
-                  </p>
-                  
-                  <p>
-                    Man må gerne genbruge mine figurer, men lige så gerne finde på egne - og det vil være godt hvis man kan huske den, når man skal klappe alene igen
+                    Gør det lige en gang til - tænker at der er mindst 4 mere der har lyst til at før an? 
                   </p>
                 </div>
               </Parallax>
@@ -156,6 +172,80 @@ export const IndexPageTemplate = ({
                 <img src={OnkelHenrikEyes} alt="Onkel Henrik" className="pointer-events-none" />
               </Parallax>
             </div>
+          </div>
+        </div>
+
+        <div className="section bg-main">
+          <div className="container">
+            <div className="columns is-vcentered">
+              <Parallax speed={-10} className="column flex justify-start pr-8">
+                <img src={OnkelHenrikZzz} alt="Onkel Henrik" className="pointer-events-none" />
+              </Parallax>
+              <Parallax speed={20} className="column">
+                <div className="notification is-info text-xl flex flex-col items-center">
+                  <p>
+                  Nu skal I lægge jer på ryggen eller sætte jer ned, så I er afslappede. I skal bare lukke øjnene, tage en pause og lytte.
+                  </p>
+                    <audio className="mt-8" src="/assets/ro-paa.wav" controls />
+                </div>
+              </Parallax>
+            </div>
+          </div>
+        </div>
+
+        <div className="section bg-green-200">
+          <div className="container">
+            <div className="columns is-vcentered">
+              <Parallax speed={-10} className="column flex justify-end pr-8">
+                <video src="/assets/Spejldans.mp4" controls width="840" alt="placeholder" />
+              </Parallax>
+              <Parallax speed={20} className="column">
+                <div className="notification is-info text-xl">
+                  <p>
+                    Så skal I spejle mig og min dans. Stil jer op i rækker, så i har lidt plads til at bevæge jer.
+                  </p>
+                </div>
+              </Parallax>
+            </div>
+          </div>
+        </div>
+
+        <div className="section bg-green-200">
+          <div className="container">
+            <div className="columns is-vcentered">
+              <Parallax speed={20} className="column">
+                <div className="notification is-info text-xl">
+                  <p className="pt-8">
+                    Vi tager den lige en gang til!
+                  </p>
+                  <p className="pt-8">
+                    Hvis I selv vil danse for, så kan I starte musikken her og vælge nogen der danser for.
+                  </p>
+                  <audio className="my-8" src="/assets/Spejldans.wav" controls />
+                </div>
+              </Parallax>
+              <Parallax speed={-10} className="column flex justify-end pr-8">
+                <video src="/assets/Spejldans.mp4" controls width="840" alt="placeholder" />
+              </Parallax>
+            </div>
+          </div>
+        </div>
+
+        <div className="section bg-main">
+          <div className="container has-text-centered">
+            <Parallax translateX={["50px", "-50px"]}>
+              <h2 className="title text-6xl">Tak for i dag...</h2>
+            </Parallax>
+            <Parallax translateX={["-50px","50px"]}>
+              <h3 className="subtitle text-4xl">...vi slutter af med Ro På.</h3>
+            </Parallax>
+            <Parallax translateX={["200px","-200px"]} className="content text-xl flex flex-col items-center justify-center">
+              <p className="max-w-md pt-8">
+              I må synge og nynne med på det hele - men teksten til omkvædet er til at huske “na,na,na,na ro på, ro på nu” :)
+              </p>
+                <audio className="mr-4" src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+            </Parallax>
+
           </div>
         </div>
 

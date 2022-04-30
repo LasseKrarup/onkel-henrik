@@ -1,6 +1,6 @@
 ---
 title: Onkel Henrik
-subtitle: Musikundervisning i børnehøjde
+subtitle: Musikundervisning i øjenhøjde
 slug: /
 image1: 
     image: LK-logo.png
