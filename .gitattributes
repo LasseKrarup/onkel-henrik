@@ -1,1 +1,2 @@
+static/assets/Spejldans.mp4 filter=lfs diff=lfs merge=lfs -text
 static/assets/* filter=lfs diff=lfs merge=lfs -text
