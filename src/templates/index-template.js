@@ -97,11 +97,23 @@ export const IndexPageTemplate = ({
                   <p>
                     Så skal I <strong>danse</strong>, sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det også rigtig godt at danse den i en rundkreds, mens man danser rundt i cirkelen - indtil man skal i gang med imitationen.
                   </p>
-                  <p className="pt-8">Vi tager den lige en gang til!</p>
                 </div>
               </Parallax>
             </div>
           </div>
+        </div>
+        
+        <div className="section bg-green-200">
+          <div className="container has-text-centered">
+            <div className="is-vcentered">
+              <Parallax speed={10}>
+                <h2 className="title text-6xl">Vi tager den lige en gang til!</h2>
+              </Parallax>
+              <Parallax speed={-10} className="flex justify-center">
+                <img src="https://www.dummyimage.com/840x600/" alt="Onkel Henrik" className="pointer-events-none" />
+              </Parallax>
+            </div>
+          </div>  
         </div>
 
         <div className="section bg-orange-100">
@@ -145,6 +157,7 @@ export const IndexPageTemplate = ({
               <p className="max-w-md pt-8">
                 Man må gerne genbruge mine figurer, men lige så gerne finde på sine egne - og det vil være godt hvis man klapper en rytme man kan huske - for man skal gøre det 2 gange :) 
               </p>
+              <audio className="mr-4" src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
               <p className="max-w-md pt-8">
                 Hvis I hellere vil trampe, hoppe, synge, gå som en julemand eller lyde som en heks, så brug min sing-back version og hent teksten
               </p>
@@ -166,6 +179,15 @@ export const IndexPageTemplate = ({
                   <p>
                     Gør det lige en gang til - tænker at der er mindst 4 mere der har lyst til at før an? 
                   </p>
+
+                  <div className="mt-8">
+                    <strong>Mine figurer</strong>
+                    <audio src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+                  </div>
+                  <div className="mt-8">
+                    <strong>Sing back</strong>
+                    <audio src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+                  </div>
                 </div>
               </Parallax>
               <Parallax speed={-10} className="column flex justify-start pr-8">
