@@ -197,23 +197,6 @@ export const IndexPageTemplate = ({
           </div>
         </div>
 
-        <div className="section bg-main">
-          <div className="container">
-            <div className="columns is-vcentered">
-              <Parallax speed={-10} className="column flex justify-start pr-8">
-                <img src={OnkelHenrikZzz} alt="Onkel Henrik" className="pointer-events-none" />
-              </Parallax>
-              <Parallax speed={20} className="column">
-                <div className="notification is-info text-xl flex flex-col items-center">
-                  <p>
-                  Nu skal I lægge jer på ryggen eller sætte jer ned, så I er afslappede. I skal bare lukke øjnene, tage en pause og lytte.
-                  </p>
-                    <audio className="mt-8" src="/assets/ro-paa.wav" controls />
-                </div>
-              </Parallax>
-            </div>
-          </div>
-        </div>
 
         <div className="section bg-green-200">
           <div className="container">
@@ -252,6 +235,24 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </div>
+        
+        <div className="section bg-main">
+          <div className="container">
+            <div className="columns is-vcentered">
+              <Parallax speed={-10} className="column flex justify-start pr-8">
+                <img src={OnkelHenrikZzz} alt="Onkel Henrik" className="pointer-events-none" />
+              </Parallax>
+              <Parallax speed={20} className="column">
+                <div className="notification is-info text-xl flex flex-col items-center">
+                  <p>
+                  Nu skal I lægge jer på ryggen eller sætte jer ned, så I er afslappede. I skal bare lukke øjnene, tage en pause og lytte.
+                  </p>
+                    <audio className="mt-8" src="/assets/ro-paa.wav" controls />
+                </div>
+              </Parallax>
+            </div>
+          </div>
+        </div>
 
         <div className="section bg-main">
           <div className="container has-text-centered">
@@ -271,11 +272,12 @@ export const IndexPageTemplate = ({
           </div>
         </div>
 
+
         {/* <PreviewCompatibleImage imageInfo={image} />
         <div
-          className="content"
-          dangerouslySetInnerHTML={{__html: html}}
-        ></div> */}
+        className="content"
+        dangerouslySetInnerHTML={{__html: html}}
+      ></div> */}
       </div>
     </div>
   );
