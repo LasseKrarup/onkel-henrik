@@ -95,7 +95,8 @@ export const IndexPageTemplate = ({
               <Parallax speed={20} className="column">
                 <div className="notification is-info text-xl">
                   <p>
-                  Så skal vi <strong>danse</strong>, sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det rigtig godt at danse den i en rundkreds indtil man skal klappe, og vender ind mod hinanden. 
+                    Så skal vi <strong>danse!</strong>
+                    Sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det rigtig godt at danse i en rundkreds indtil man skal klappe, og vender ind mod hinanden.
                   </p>
                 </div>
               </Parallax>
@@ -221,12 +222,12 @@ export const IndexPageTemplate = ({
             <h2 className="title text-6xl">Spejldans</h2>
             <div className="columns is-vcentered">
               <Parallax speed={-10} className="column flex justify-end pr-8">
-                <img src="http://dummyimage.com/840x600" width="840" alt="placeholder" />
+                <iframe width="840" height="600" src="https://www.youtube.com/embed/tmXjjK86uI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </Parallax>
               <Parallax speed={20} className="column">
                 <div className="notification is-info text-xl">
                   <p>
-                    Så skal I spejle mig og min dans. Stil jer op i rækker, så i har lidt plads til at bevæge jer.
+                    Så skal I spejle mig og min dans. Stil jer op i rækker, så I har lidt plads til at bevæge jer.
                   </p>
                 </div>
               </Parallax>
@@ -249,7 +250,7 @@ export const IndexPageTemplate = ({
                 </div>
               </Parallax>
               <Parallax speed={-10} className="column flex justify-end pr-8">
-                <img src="http://dummyimage.com/840x600" width="840" alt="placeholder" />
+                <iframe width="840" height="600" src="https://www.youtube.com/embed/tmXjjK86uI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </Parallax>
             </div>
           </div>
