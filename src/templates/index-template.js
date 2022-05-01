@@ -221,7 +221,7 @@ export const IndexPageTemplate = ({
             <h2 className="title text-6xl">Spejldans</h2>
             <div className="columns is-vcentered">
               <Parallax speed={-10} className="column flex justify-end pr-8">
-                <video src="/assets/Spejldans.mp4" controls width="840" alt="placeholder" />
+                <img src="http://dummyimage.com/840x600" width="840" alt="placeholder" />
               </Parallax>
               <Parallax speed={20} className="column">
                 <div className="notification is-info text-xl">
@@ -249,7 +249,7 @@ export const IndexPageTemplate = ({
                 </div>
               </Parallax>
               <Parallax speed={-10} className="column flex justify-end pr-8">
-                <video src="/assets/Spejldans.mp4" controls width="840" alt="placeholder" />
+                <img src="http://dummyimage.com/840x600" width="840" alt="placeholder" />
               </Parallax>
             </div>
           </div>
