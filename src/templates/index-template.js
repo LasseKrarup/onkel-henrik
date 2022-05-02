@@ -81,7 +81,7 @@ export const IndexPageTemplate = ({
               <Parallax translateY={[-50,50]}>
                 <h3 className="subtitle text-4xl">"Det' Musik"</h3>
               </Parallax>
-            <Parallax speed={10}><img src="http://dummyimage.com/840x600" width="840" alt="placeholder" /></Parallax>
+            <Parallax speed={10}><audio src="/assets/det-musik.wav" controls/></Parallax>
           </div>
         </div>
 
@@ -90,13 +90,12 @@ export const IndexPageTemplate = ({
             <h2 className="title text-6xl">Ekkodansen</h2>
             <div className="columns is-vcentered">
               <Parallax speed={-10} className="column flex justify-end pr-8">
-                <img src="http://dummyimage.com/840x600" width="840" alt="placeholder" />
+              <iframe width="840" height="600" src="https://www.youtube.com/embed/47VF3MAzvNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </Parallax>
               <Parallax speed={20} className="column">
                 <div className="notification is-info text-xl">
                   <p>
-                    Så skal vi <strong>danse!</strong>
-                    Sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det rigtig godt at danse i en rundkreds indtil man skal klappe, og vender ind mod hinanden.
+                    Så skal vi <strong>danse!</strong> Sørg for at der er plads på gulvet. Man kan lave den stående, men senere er det rigtig godt at danse i en rundkreds indtil man skal klappe, og vender ind mod hinanden.
                   </p>
                 </div>
               </Parallax>
@@ -111,7 +110,7 @@ export const IndexPageTemplate = ({
                 <h2 className="title text-6xl">Vi tager den lige en gang til!</h2>
               </Parallax>
               <Parallax speed={-10} className="flex justify-center">
-                <img src="https://www.dummyimage.com/840x600/" alt="Onkel Henrik" className="pointer-events-none" />
+                <iframe width="840" height="600" src="https://www.youtube.com/embed/47VF3MAzvNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </Parallax>
             </div>
           </div>  
@@ -119,15 +118,15 @@ export const IndexPageTemplate = ({
 
         <div className="section bg-orange-100">
           <div className="container has-text-centered">
-            <div className="columns is-vcentered">
-              <Parallax speed={20} className="column">
+            <div className="flex flex-col items-center is-vcentered">
+              <Parallax speed={20}>
                 <h2 className="title text-6xl">Så skal vi igang med at lave ekko!</h2>
                   <p className="content text-xl">
                   I skal lige vide at jeg bruger et lille signal, når vi skal starter på næste vers - det lyder sådan her: 
                   </p>
               </Parallax>
-              <Parallax speed={-10} className="column is-8 flex justify-end pr-8">
-                <img src="https://www.dummyimage.com/840x600/" alt="Onkel Henrik" className="pointer-events-none" />
+              <Parallax speed={-10} className="pt-16">
+                <audio src="Ekko_Signal.wav" controls />
               </Parallax>
             </div>
           </div>  
@@ -139,8 +138,8 @@ export const IndexPageTemplate = ({
               <Parallax speed={10}>
                 <h2 className="title text-6xl">Ekko-sangen</h2>
               </Parallax>
-              <Parallax speed={-10} className="flex justify-center">
-                <img src="https://www.dummyimage.com/840x600/" alt="Onkel Henrik" className="pointer-events-none" />
+              <Parallax speed={-10} className="flex justify-center pt-16">
+                <audio src="Ekkosangen.mp3" controls />
               </Parallax>
             </div>
           </div>  
@@ -158,12 +157,12 @@ export const IndexPageTemplate = ({
               <p className="max-w-md pt-8">
                 Man må gerne genbruge mine figurer, men lige så gerne finde på sine egne - og det vil være godt hvis man klapper en rytme man kan huske - for man skal gøre det 2 gange :) 
               </p>
-              <audio className="mr-4" src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+              <audio className="mr-4" src="/assets/Ekkosangen_uden_klap.mp3" controls />
               <p className="max-w-md pt-8">
                 Hvis I hellere vil trampe, hoppe, synge, gå som en julemand eller lyde som en heks, så brug min sing-back version og hent teksten
               </p>
               <div className="flex justify-center">
-                <audio className="mr-4" src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+                <audio className="mr-4" src="/assets/Ekkosangen_singback.mp3" controls />
                 <a className="button is-primary ml-4" href="/assets/Ekkosangen.pdf" target="_blank" rel="noreferrer">Hent teksten her</a>
               </div>
             </Parallax>
@@ -183,11 +182,11 @@ export const IndexPageTemplate = ({
 
                   <div className="mt-8">
                     <strong>Jeres klap</strong>
-                    <audio src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+                    <audio src="/assets/Ekkosangen_uden_klap.mp3" controls />
                   </div>
                   <div className="mt-8">
                     <strong>Sing back</strong>
-                    <audio src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+                    <audio src="/assets/Ekkosangen_singback.mp3" controls />
                   </div>
                 </div>
               </Parallax>
