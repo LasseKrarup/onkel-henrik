@@ -139,7 +139,7 @@ export const IndexPageTemplate = ({
                 <h2 className="title text-6xl">Ekko-sangen</h2>
               </Parallax>
               <Parallax speed={-10} className="flex justify-center pt-16">
-                <audio src="/assets/Ekkosangen.mp3" controls />
+                <audio src="/assets/Ekkosangen_4_vers.mp3" controls />
               </Parallax>
             </div>
           </div>  
