@@ -126,7 +126,7 @@ export const IndexPageTemplate = ({
                   </p>
               </Parallax>
               <Parallax speed={-10} className="pt-16">
-                <audio src="Ekko_Signal.wav" controls />
+                <audio src="/assets/Ekko_Signal.wav" controls />
               </Parallax>
             </div>
           </div>  
@@ -268,7 +268,7 @@ export const IndexPageTemplate = ({
               <p className="max-w-md pt-8">
               I må synge og nynne med på det hele - men teksten til omkvædet er til at huske “na,na,na,na ro på, ro på nu” :)
               </p>
-                <audio className="mr-4" src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
+                <audio className="mr-4" src="/assets/ro-paa.wav" controls />
             </Parallax>
 
           </div>
